@@ -169,9 +169,7 @@ const App: React.FC = () => {
           </Gradient>
         </Box>
         <Box>
-          <Text color="cyan">
-            <Spinner type="dots" />
-          </Text>
+          <Spinner type="dots" />
           <Text color="cyan"> Initializing developer environment...</Text>
         </Box>
       </Box>

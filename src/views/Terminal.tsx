@@ -165,9 +165,7 @@ const Terminal: React.FC = () => {
 
         {isExecuting && (
           <Box>
-            <Text color="yellow">
-              <Spinner type="dots" />
-            </Text>
+            <Spinner type="dots" />
             <Text color="yellow"> Executing command...</Text>
           </Box>
         )}

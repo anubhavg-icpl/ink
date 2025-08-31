@@ -196,9 +196,7 @@ const Dashboard: React.FC<DashboardProps> = ({ tasks, notifications, settings })
 
       {settings.autoRefresh && (
         <Box marginTop={1}>
-          <Text dimColor>
-            <Spinner type="dots" />
-          </Text>
+          <Spinner type="dots" />
           <Text dimColor> Auto-refreshing every {settings.refreshInterval / 1000}s</Text>
         </Box>
       )}

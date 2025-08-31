@@ -132,9 +132,7 @@ const SystemMonitor: React.FC<SystemMonitorProps> = ({ settings }) => {
         <Spacer />
         {settings.autoRefresh && (
           <Box>
-            <Text color="cyan">
-              <Spinner type="dots" />
-            </Text>
+            <Spinner type="dots" />
             <Text color="cyan"> Refreshing every {settings.refreshInterval / 1000}s</Text>
           </Box>
         )}
