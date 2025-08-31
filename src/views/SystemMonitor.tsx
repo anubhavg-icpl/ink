@@ -130,13 +130,14 @@ const SystemMonitor: React.FC<SystemMonitorProps> = ({ settings }) => {
           <Text bold>🖥️ System Monitor</Text>
         </Gradient>
         <Spacer />
-        <Text color="cyan">
-          {settings.autoRefresh && (
-            <>
-              <Spinner type="dots" /> Refreshing every {settings.refreshInterval / 1000}s
-            </>
-          )}
-        </Text>
+        {settings.autoRefresh && (
+          <Box>
+            <Text color="cyan">
+              <Spinner type="dots" />
+            </Text>
+            <Text color="cyan"> Refreshing every {settings.refreshInterval / 1000}s</Text>
+          </Box>
+        )}
       </Box>
 
       <Box flexDirection="row" marginBottom={1}>

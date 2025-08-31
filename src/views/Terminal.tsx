@@ -166,8 +166,9 @@ const Terminal: React.FC = () => {
         {isExecuting && (
           <Box>
             <Text color="yellow">
-              <Spinner type="dots" /> Executing command...
+              <Spinner type="dots" />
             </Text>
+            <Text color="yellow"> Executing command...</Text>
           </Box>
         )}
 
@@ -205,11 +206,11 @@ const Terminal: React.FC = () => {
             <Box flexDirection="column">
               <Text bold color="yellow">Keyboard Shortcuts</Text>
               <Text dimColor>────────────────</Text>
-              <Text><Text color="cyan">↑/↓</Text> - Navigate history</Text>
-              <Text><Text color="cyan">Ctrl+L</Text> - Clear terminal</Text>
-              <Text><Text color="cyan">Ctrl+C</Text> - Cancel command</Text>
-              <Text><Text color="cyan">Enter</Text> - Execute command</Text>
-              <Text><Text color="cyan">Tab</Text> - Switch view</Text>
+              <Box><Text color="cyan">↑/↓</Text><Text> - Navigate history</Text></Box>
+              <Box><Text color="cyan">Ctrl+L</Text><Text> - Clear terminal</Text></Box>
+              <Box><Text color="cyan">Ctrl+C</Text><Text> - Cancel command</Text></Box>
+              <Box><Text color="cyan">Enter</Text><Text> - Execute command</Text></Box>
+              <Box><Text color="cyan">Tab</Text><Text> - Switch view</Text></Box>
             </Box>
           </Box>
         </Box>

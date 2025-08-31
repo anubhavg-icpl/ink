@@ -179,12 +179,12 @@ const Dashboard: React.FC<DashboardProps> = ({ tasks, notifications, settings })
               <Text dimColor>──────────────────</Text>
               
               <Box marginTop={1} flexDirection="column">
-                <Text><Text color="cyan">[1]</Text> Dashboard</Text>
-                <Text><Text color="cyan">[2]</Text> Task Manager</Text>
-                <Text><Text color="cyan">[3]</Text> System Monitor</Text>
-                <Text><Text color="cyan">[4]</Text> Terminal</Text>
-                <Text><Text color="cyan">[5]</Text> Settings</Text>
-                <Text><Text color="cyan">[6]</Text> Help</Text>
+                <Box><Text color="cyan">[1]</Text><Text> Dashboard</Text></Box>
+                <Box><Text color="cyan">[2]</Text><Text> Task Manager</Text></Box>
+                <Box><Text color="cyan">[3]</Text><Text> System Monitor</Text></Box>
+                <Box><Text color="cyan">[4]</Text><Text> Terminal</Text></Box>
+                <Box><Text color="cyan">[5]</Text><Text> Settings</Text></Box>
+                <Box><Text color="cyan">[6]</Text><Text> Help</Text></Box>
                 <Newline />
                 <Text dimColor>Use Tab/Shift+Tab to navigate</Text>
                 <Text dimColor>Press Esc to exit</Text>
@@ -197,8 +197,9 @@ const Dashboard: React.FC<DashboardProps> = ({ tasks, notifications, settings })
       {settings.autoRefresh && (
         <Box marginTop={1}>
           <Text dimColor>
-            <Spinner type="dots" /> Auto-refreshing every {settings.refreshInterval / 1000}s
+            <Spinner type="dots" />
           </Text>
+          <Text dimColor> Auto-refreshing every {settings.refreshInterval / 1000}s</Text>
         </Box>
       )}
     </Box>

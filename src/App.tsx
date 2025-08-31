@@ -170,8 +170,9 @@ const App: React.FC = () => {
         </Box>
         <Box>
           <Text color="cyan">
-            <Spinner type="dots" /> Initializing developer environment...
+            <Spinner type="dots" />
           </Text>
+          <Text color="cyan"> Initializing developer environment...</Text>
         </Box>
       </Box>
     );
