@@ -7,9 +7,7 @@ const Help: React.FC = () => {
   return (
     <Box flexDirection="column" padding={1}>
       <Box marginBottom={1} justifyContent="center">
-        <Gradient name="rainbow">
-          <BigText text="DevHub" font="simple" />
-        </Gradient>
+        <BigText text="DevHub" font="simple" />
       </Box>
 
       <Box marginBottom={1} justifyContent="center">
